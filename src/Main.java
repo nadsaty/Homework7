@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -92,5 +93,17 @@ public class Main {
             }
         }
         System.out.println("Сумма накоплений за 9 лет составила - " + cashSaving);
+    }
+    public static void task7() {
+        System.out.println("\n \n Задача 7 \n Пятничные отчеты: ");
+        int firstFriday= 7;
+        for (int i = 1; i <= 31; i = i + 1) {
+            if (i % firstFriday != 0) {
+                System.out.println(i);
+            }
+            if (i % firstFriday == 0) {
+                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
+            }
+        }
     }
 }
