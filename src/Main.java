@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 
     public static void task1() {
@@ -103,6 +104,17 @@ public class Main {
             }
             if (i % firstFriday == 0) {
                 System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
+            }
+        }
+    }
+
+    public static void task8() {
+        System.out.println("\n \n Задача 8 \n Полет кометы: ");
+        int begin = 1896;
+        int end = 2054;
+        for (int i = 0; i <= end; i = i + 1) {
+            if (i % 79 == 0  && i >= begin) {
+                System.out.println(i);
             }
         }
     }
