@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -75,5 +76,21 @@ public class Main {
             }
         }
         System.out.println(i + " месяцев ушло на то, чтобы собрать сумму в 12 000 000р");
+    }
+
+    public static void task6() {
+        System.out.println("\n \n Задача 6 \n Подсчет накоплений за каждые полгода: ");
+        int firstDeposit = 15000;
+        int cashSaving = 0;
+        int i = 0;
+        while (i < 108) {
+            cashSaving = cashSaving + firstDeposit;
+            cashSaving = cashSaving + ((firstDeposit / 100) * 7);
+            i = i + 1;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + ", сумма накоплений равна " + cashSaving + " рублей");
+            }
+        }
+        System.out.println("Сумма накоплений за 9 лет составила - " + cashSaving);
     }
 }
