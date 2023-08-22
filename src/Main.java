@@ -40,13 +40,14 @@ public class Main {
 
     public static void task3() {
         System.out.println("\n \n Задача 3 \n Подсчет текущей популяции: ");
+
         int totalPopulation = 12000000;
-        int newPeople = 17;
-        int deadPeople = 8;
-        int newPopulation = (totalPopulation / 1000) * (newPeople - deadPeople);
-        for (int i = 1; i <= 10; i = i + 1) {
-            totalPopulation = totalPopulation + newPopulation;
-            System.out.println("Год " + i + " численность населения составляет " + totalPopulation);
+        for (int i = 1; i <= 10; i++) {
+            int newPeople = 17 * (totalPopulation / 1000);
+            int deadPeople = 8 * (totalPopulation / 1000);
+            int populationPlus = newPeople - deadPeople;
+            totalPopulation = totalPopulation + populationPlus;
+            System.out.println("Год " + i + ": численность населения составляет " + totalPopulation);
         }
     }
 
